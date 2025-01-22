@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "author": "Ängla Juliusson",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
 }
