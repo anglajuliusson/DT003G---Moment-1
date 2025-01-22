@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(25, 143, 153);
+}
+h1 {
+    color: white;
+    margin: 2em;
+}
+.headmenu {
+    background-color: rgb(8, 72, 78);
+    width: 100%;
+    margin: 0;
+    margin: 0 auto;
+}
+.nav-links {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    text-decoration: none;
+    font-size: larger;
+    padding: 2em;
+}
+.duärhär {
+    text-decoration: underline !important;
+}
+a:link {color: white; text-decoration: none;}
+a:visited {color: white; text-decoration: none;}
+a:hover {color: white;}
+a:active {color: white; text-decoration: none;}
+main {
+    background-color: rgb(194, 239, 243);
+    margin: 2em;
+    max-width: 800px;
+}
+.infoheader {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+.processheader {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+.infotext {
+    margin-left: 3em;
+    margin-bottom: 3em;
+    margin-right: 3em;
+    max-width: 500px;
+}
+@media (min-width: 100px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "headmenu"
+        "infotext"
+        "footer";
+        grid-template-rows: auto;
+    }
+    .header {
+        grid-area: header;
+    }
+    .headmenu {
+        grid-area: headmenu;
+    }
+    main {
+        grid-area: infotext;
+    }
+    footer {
+        grid-area: footer;
+        text-align: center;
+        color: white;
+        font-size: large;
+    }
+}
