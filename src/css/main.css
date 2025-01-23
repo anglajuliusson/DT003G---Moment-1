@@ -10,14 +10,16 @@ h1 {
     width: 100%;
     margin: 0;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 .nav-links {
     display: flex;
-    gap: 50px;
+    gap: 70px;
     list-style: none;
     text-decoration: none;
     font-size: larger;
-    padding: 2em;
+    padding: 1em;
 }
 .duärhär {
     text-decoration: underline !important;
@@ -29,7 +31,7 @@ a:active {color: white; text-decoration: none;}
 main {
     background-color: rgb(194, 239, 243);
     margin: 2em;
-    max-width: 800px;
+    max-width: 600px;
 }
 .infoheader {
     margin-left: 2em;
