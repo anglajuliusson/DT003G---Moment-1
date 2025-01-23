@@ -58,7 +58,7 @@ main {
   margin-right: 3em;
 }
 
-@media (width >= 100px) {
+@media (width >= 1025px) {
   body {
     grid-template-rows: auto;
     grid-template-areas: "header"
@@ -85,6 +85,66 @@ main {
     color: #fff;
     grid-area: footer;
     font-size: large;
+  }
+}
+
+@media (width <= 1024px) {
+  body {
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "headmenu"
+                         "infotext"
+                         "footer";
+    display: grid;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .headmenu {
+    grid-area: headmenu;
+  }
+
+  main {
+    grid-area: infotext;
+  }
+
+  footer {
+    text-align: center;
+    color: #fff;
+    grid-area: footer;
+    font-size: large;
+  }
+}
+
+@media (width <= 600px) {
+  body {
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "headmenu"
+                         "infotext"
+                         "footer";
+    display: grid;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .headmenu {
+    grid-area: headmenu;
+  }
+
+  main {
+    grid-area: infotext;
+  }
+
+  footer {
+    text-align: center;
+    color: #fff;
+    grid-area: footer;
+    font-size: medium;
   }
 }
 /*# sourceMappingURL=index.34df27b5.css.map */

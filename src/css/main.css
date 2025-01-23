@@ -45,7 +45,7 @@ main {
     margin-right: 3em;
     max-width: 500px;
 }
-@media (min-width: 100px) {
+@media (min-width: 1025px) {
     body {
         display: grid;
         grid-template-areas: 
@@ -69,5 +69,57 @@ main {
         text-align: center;
         color: white;
         font-size: large;
+    }
+}
+@media (max-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "headmenu"
+        "infotext"
+        "footer";
+        grid-template-rows: auto;
+    }
+    .header {
+        grid-area: header;
+    }
+    .headmenu {
+        grid-area: headmenu;
+    }
+    main {
+        grid-area: infotext;
+    }
+    footer {
+        grid-area: footer;
+        text-align: center;
+        color: white;
+        font-size: large;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "headmenu"
+        "infotext"
+        "footer";
+        grid-template-rows: auto;
+    }
+    .header {
+        grid-area: header;
+    }
+    .headmenu {
+        grid-area: headmenu;
+    }
+    main {
+        grid-area: infotext;
+    }
+    footer {
+        grid-area: footer;
+        text-align: center;
+        color: white;
+        font-size: medium;
     }
 }

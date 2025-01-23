@@ -1,0 +1,186 @@
+body {
+    background-color: rgb(25, 143, 153);
+}
+h1 {
+    color: white;
+    margin: 2em;
+}
+.headmenu {
+    background-color: rgb(8, 72, 78);
+    width: 100%;
+    margin: 0;
+    margin: 0 auto;
+}
+.nav-links {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    text-decoration: none;
+    font-size: larger;
+    padding: 2em;
+}
+.duärhär {
+    text-decoration: underline !important;
+}
+a:link {color: white; text-decoration: none;}
+a:visited {color: white; text-decoration: none;}
+a:hover {color: white;}
+a:active {color: white; text-decoration: none;}
+main {
+    background-color: rgb(194, 239, 243);
+    margin: 2em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+img {
+    margin: 10px;
+    width: 400px;
+    height: 500px;
+}
+.bilderheader {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+.footer {
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+@media (min-width: 1025px){
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "menu"
+        "main"
+        "footer";
+        grid-template-rows: auto;
+    }
+    .header {
+        grid-area: header;
+    }
+    .headmenu {
+        grid-area: menu;
+    }
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-areas: 
+        "bilderheader"
+        "img";
+        grid-template-rows: auto;
+    }
+    .bilderheader {
+        grid-area: bilderheader;
+    }
+    .img {
+        grid-area: img;
+        display: grid;
+        grid-template-areas: 
+        "paprikan skelleftealven vindelalven"
+        "ronnberg trollforsen emty";
+        grid-template-rows: auto;
+    }
+    .paprikan {grid-area: paprikan;}
+    .ronnberg {grid-area: ronnberg;}
+    .skelleftealven {grid-area: skelleftealven;}
+    .trollforsen {grid-area: trollforsen;}
+    .vindelalven {grid-area: vindelalven;}
+    .footer {
+        grid-area: footer;
+    }
+}
+@media (max-width: 1024px){
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "menu"
+        "main"
+        "footer";
+        grid-template-rows: auto;
+    }
+    .header {
+        grid-area: header;
+    }
+    .headmenu {
+        grid-area: menu;
+    }
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-areas: 
+        "bilderheader"
+        "img";
+        grid-template-rows: auto;
+    }
+    .bilderheader {
+        grid-area: bilderheader;
+    }
+    .img {
+        grid-area: img;
+        display: grid;
+        grid-template-areas: 
+        "paprikan skelleftealven"
+        "vindelalven ronnberg"
+        "trollforsen empty";
+        grid-template-rows: auto;
+    }
+    .paprikan {grid-area: paprikan;}
+    .ronnberg {grid-area: ronnberg;}
+    .skelleftealven {grid-area: skelleftealven;}
+    .trollforsen {grid-area: trollforsen;}
+    .vindelalven {grid-area: vindelalven;}
+    .footer {
+        grid-area: footer;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "menu"
+        "main"
+        "footer";
+        grid-template-rows: auto;
+    }
+    .header {
+        grid-area: header;
+    }
+    .headmenu {
+        grid-area: menu;
+    }
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-areas: 
+        "bilderheader"
+        "img";
+        grid-template-rows: auto;
+    }
+    .bilderheader {
+        grid-area: bilderheader;
+    }
+    .img {
+        grid-area: img;
+        display: grid;
+        grid-template-areas: 
+        "paprikan"
+        "skelleftealven"
+        "vindelalven"
+        "ronnberg"
+        "trollforsen";
+        grid-template-rows: auto;
+    }
+    .paprikan {grid-area: paprikan;}
+    .ronnberg {grid-area: ronnberg;}
+    .skelleftealven {grid-area: skelleftealven;}
+    .trollforsen {grid-area: trollforsen;}
+    .vindelalven {grid-area: vindelalven;}
+    .footer {
+        grid-area: footer;
+        font-size: medium;
+    }
+}
